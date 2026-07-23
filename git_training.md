@@ -16,7 +16,7 @@ Then your **Preview** will render the structure properly:
    4. `git commit -m "Add initial setup"`
    5. If your GitHub repository is empty:
       ```bash
-      git branch -M main
+      git branch -M main or skip it if its a main branch
       git push -u origin main
       ```
 
