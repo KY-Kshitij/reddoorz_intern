@@ -22,7 +22,7 @@ Then your **Preview** will render the structure properly:
 
 ---
 
-## Method 2 — Already Existing Files
+## Method 2 — Already Existing Files (conflicts)
 
 1. If files already exist on GitHub:
    ```bash
