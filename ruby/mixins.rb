@@ -19,7 +19,7 @@ end
 # Using include
 # =========================
 
-cclass CarFactory
+class CarFactory
   include MusicSystem
 end
 
@@ -45,36 +45,36 @@ CarFactory2.play_music # ✅
 
 ##ancestors - include
 
-car object
-    ↓
-CarFactory
-    ↓
-MusicSystem
-    ↓
-Object
-    ↓
-Kernel
-    ↓
-BasicObject
+# car object
+#     ↓
+# CarFactory
+#     ↓
+# MusicSystem
+#     ↓
+# Object
+#     ↓
+# Kernel
+#     ↓
+# BasicObject
 
 
-##ancestors - extend
+##singleton_ancestors - extend
 
-CarFactory2
-    ↓
-CarFactory2s singleton class
-    ↓
-MusicSystem
-    ↓
-Class
-    ↓
-Module
-    ↓
-Object
-    ↓
-Kernel
-    ↓
-BasicObject
+# CarFactory2
+#     ↓
+# CarFactory2s singleton class
+#     ↓
+# MusicSystem
+#     ↓
+# Class
+#     ↓
+# Module
+#     ↓
+# Object
+#     ↓
+# Kernel
+#     ↓
+# BasicObject
 
 
 # prepend
@@ -85,12 +85,12 @@ end
 
 ##ancestors - prepend
 
-music system
-    ↓
-CarFactory
-    ↓
-Object
-    ↓
-Kernel
-    ↓
-BasicObject
+# music system
+#     ↓
+# CarFactory
+#     ↓
+# Object
+#     ↓
+# Kernel
+#     ↓
+# BasicObject
