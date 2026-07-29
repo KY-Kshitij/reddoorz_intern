@@ -1,3 +1,30 @@
+
+# for *args => converts args into array
+# introduce("Kshitij", 22)
+#           ↑          ↑
+#        position 1  position 2
+
+# That's why they're called positional arguments.
+
+
+
+# for **args => converts args into hash
+# Keyword arguments
+
+# Here, you explicitly give the name/key of each argument.
+
+# def introduce(name:, age:)
+#   puts name
+#   puts age
+# end
+
+# introduce(name: "Kshitij", age: 22)  
+
+
+
+
+
+
 def add(*numbers)
   p numbers
 end
