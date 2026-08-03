@@ -4,7 +4,7 @@
 
 def create_proc
   Proc.new do
-    puts "inside proc"
+    return "inside proc"
   end
 end
 
@@ -19,8 +19,10 @@ x.call
 
 #A lambda's return returns from the lambda itself, not the surrounding method.
 
-# next inside Proc
 
+
+
+# next and return  inside Proc
 # This is different:
 
 def t
