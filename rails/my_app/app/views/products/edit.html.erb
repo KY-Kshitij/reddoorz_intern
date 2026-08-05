@@ -1,0 +1,36 @@
+<%= form_with model: @product do |form| %>
+  <form>
+    <div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+</div>
+<div>
+  <%= form.label :price %>
+  <%= form.number_field :price %>
+</div>
+<div>
+   <button>
+     <%= form.submit "Update Product" %>
+   </button> 
+</div>
+  </form>
+<% end %>
+
+
+<%# ArgumentError in Products#edit
+Showing /home/kshitijkumar/Downloads/reddoorz/rails/my_app/app/views/products/edit.html.erb where line #2 raised:
+
+Passed nil to the :model argument, expect an object or false
+Extracted source (around line #1):
+1
+2
+3
+4
+5
+6
+              
+<%# <%= form_with model: @product do |form| %>
+<%# #hwo to fix this error? The error occurs because the `@product` instance variable is not being set in the `edit` action of the `ProductsController`. To fix this, you need to find the product by its ID and assign it to `@product` in the `edit` action. Here's how you can do it:
+```ruby
+def edit
+  @product = Product.find(params[:id]) %>
